@@ -135,7 +135,7 @@ class MsfPro
 		output_or_link m, output_string
 	end
 
-	def discover(m, range = ["10.6.200.0/24"])
+	def discover(m, range=[])
 		return m.reply "Error: No connection" unless @rpc
 		m.reply "Starting Discover Task!"
 		opts = { :token => @token }
