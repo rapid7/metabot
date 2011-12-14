@@ -1,4 +1,4 @@
-#require 'msfrpc-client'
+require 'msfrpc-client'
 
 class MsfPro
   include Cinch::Plugin
@@ -205,24 +205,24 @@ class MsfPro
 	def nexpose(m, range)
 		return m.reply "Error: No privs" 
 		return m.reply "Error: No connection" unless @rpc
-		m.reply "[+] Task Complete!"
+		m.reply "[-] Not Implemented!"
 	end
 
 	def bruteforce(m, range)
 		return m.reply "Error: No privs" 
 		return m.reply "Error: No connection" unless @rpc
-		m.reply "[+] Task Complete!"
+		m.reply "[-] Not Implemented!"
 	end
 
 	def exploit(m, range)
 		return m.reply "Error: No privs" 
 		return m.reply "Error: No connection" unless @rpc
-		m.reply "[+] Task Complete!"
+		m.reply "[-] Not Implemented!"
 	end
 
 	def import(m, path)
 		return m.reply "Error: No privs" 
 		return m.reply "Error: No connection" unless @rpc
-		m.reply "[+] Task Complete!"
+		m.reply "[-] Not Implemented!"
 	end
 end
