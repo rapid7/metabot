@@ -9,21 +9,21 @@ class VmControl
 	match /vm_revert (.+) (.+)/, method: :vm_revert
 	match /vm_create_snapshot (.+) (.+)/, method: :vm_create_snapshot
 	match /vm_delete_snapshot (.+) (.+)/, method: :vm_delete_snapshot
- 	match /vm_stop (.+)/, method: :vm_stop
+	match /vm_stop (.+)/, method: :vm_stop
 	match /vm_reset (.+)/, method: :vm_reset
 	match /vm_status (.+)/, method: :vm_status
 	match /vm_describe (.+)/, method: :vm_describe
 
 	# Controllers / Multiple vms
-  match /vm_load (.+)/, method: :vm_load_lab
-  match /vm_list/, method: :vm_show
+	match /vm_load (.+)/, method: :vm_load_lab
+	match /vm_list/, method: :vm_show
 	match /vm_show/, method: :vm_show
- 	match /vm_list_running/, method: :vm_running
+	match /vm_list_running/, method: :vm_running
 	match /vm_show_running/, method: :vm_running
-  match /vm_running/, method: :vm_running
+	match /vm_running/, method: :vm_running
 
 	# Depend on modifiers
- 	match /vm_install_pro (.+) (.+)/, method: :vm_install_pro
+	match /vm_install_pro (.+) (.+)/, method: :vm_install_pro
 	
 	def initialize(*args)
 		super(*args)
