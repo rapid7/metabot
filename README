@@ -1,0 +1,5 @@
+
+A bot you can use to control common security apps (metasploit, nexpose, etc)
+
+Dependencies: 
+cinch
