@@ -1,5 +1,5 @@
 require 'helpers'
-#require 'nexpose'
+require 'nexpose'
 
 class NexposePlugin
   include Cinch::Plugin
