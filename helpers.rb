@@ -1,13 +1,4 @@
 
-def sandwich_type
-	@sandwiches = ["pbnj", "turkey", "bologna", "ham", "mayonaise", "horsemeat", "chicken","lizard" ,"chicken liver", "liver and onion"]
-@sandwiches[rand(@sandwiches.count)]
-end
-
-def metasploit_channel_key
-  File.open(File.join(File.dirname(__FILE__), "..", "..", "secure", "channel_key.txt")).read
-end
-
 def filter_command(string)
 	return "" unless string # nil becomes empty string
 	return unless string.class == String # Allow other types unmodified		
