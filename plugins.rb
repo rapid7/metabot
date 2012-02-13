@@ -1,6 +1,7 @@
-require 'plugins/vm_control'
+#require 'plugins/vm_control'
 require 'plugins/msf'
 require 'plugins/network'
 require 'plugins/system'
 require 'plugins/msf_pro'
 require 'plugins/nexpose'
+require 'plugins/msfinfo'

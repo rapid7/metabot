@@ -9,17 +9,15 @@ require 'helpers'
 
 bot = Cinch::Bot.new do
 	configure do |c|
-		c.server = "localhost"
+		c.server = "irc.freenode.net"
 		c.port = 6667
 		c.channels = ["#metasploit"]
-		c.realname = "metabot"
-		c.user = "metabot"
-		c.nick = "metabot"
+		c.realname = "msfbot"
+		c.user = "msfbot"
+		c.nick = "msfbot"
 		c.verbose = true
-		#c.ssl = OpenStruct.new({:use => true, :verify => false})
-		c.plugins.plugins = [ VmControl, System, Network, Framework, Nexpose, MsfPro, Test, Build, Jenkins ]
-		#c.plugins.plugins = [ MsfInfo ]
-		@version = "0.3.0"
+		c.plugins.plugins = [ MsfInfo ]
+		@version = "0.9.9"
 	end
 
 	## !version command

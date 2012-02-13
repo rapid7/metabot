@@ -1,6 +1,6 @@
 require 'msfrpc-client'
 
-class FrameworkPlugin
+class Framework
   include Cinch::Plugin
 	
 	# Administrative commands

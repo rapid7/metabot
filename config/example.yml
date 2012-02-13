@@ -1,0 +1,7 @@
+name: metabot
+server: localhost
+port: 6667
+ssl: false
+plugins:
+ - [Nexpose, {}]
+ - [VmControl, {}]
