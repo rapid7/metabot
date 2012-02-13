@@ -1,4 +1,4 @@
-require 'lib/lab/vm_controller'
+require 'lab'
 require 'helpers'
 
 class VmControl
