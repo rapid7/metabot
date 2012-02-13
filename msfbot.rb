@@ -8,22 +8,22 @@ require 'plugins'
 require 'helpers'
 
 bot = Cinch::Bot.new do
-	configure do |c|
-		c.server = "irc.freenode.net"
-		c.port = 6667
-		c.channels = ["#metasploit"]
-		c.realname = "msfbot"
-		c.user = "msfbot"
-		c.nick = "msfbot"
-		c.verbose = true
-		c.plugins.plugins = [ MsfInfo ]
-		@version = "0.9.9"
-	end
+  configure do |c|
+    c.server = "irc.freenode.net"
+    c.port = 6667
+    c.channels = ["#metasploit-staging"]
+    c.realname = "msfbot"
+    c.user = "msfbot"
+    c.nick = "msfbot"
+    c.verbose = true
+    c.plugins.plugins = [ MsfInfo ]
+    @version = "0.9.9"
+  end
 
-	## !version command
-	on :channel, /^!version/ do |m|
-	  m.reply "#{bot.nick}: Version #{@version}"
-	end
+  ## !version command
+  on :channel, /^!version/ do |m|
+    m.reply "#{bot.nick}: Version #{@version}"
+  end
 end
 
 bot.start

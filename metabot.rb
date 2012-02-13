@@ -18,7 +18,6 @@ bot = Cinch::Bot.new do
 		c.verbose = true
 		#c.ssl = OpenStruct.new({:use => true, :verify => false})
 		c.plugins.plugins = [ VmControl, System, Network, Framework, Nexpose, MsfPro, Test, Build, Jenkins ]
-		#c.plugins.plugins = [ MsfInfo ]
 		@version = "0.3.0"
 	end
 

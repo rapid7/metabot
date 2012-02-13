@@ -1,10 +1,10 @@
 require 'helpers'
 
 class Jenkins
-	include Cinch::Plugin
+  include Cinch::Plugin
 
-	def initialize(*args)
-		super(*args)
-	end
+  def initialize(*args)
+    super(*args)
+  end
 
 end

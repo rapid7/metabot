@@ -1,0 +1,25 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    cinch (1.1.3)
+    lab (0.0.4)
+      nokogiri
+    librex (0.0.65)
+    msfrpc-client (1.0.1)
+      librex (>= 0.0.32)
+      msgpack (>= 0.4.5)
+    msgpack (0.4.6)
+    nexpose (0.0.9)
+      librex (>= 0.0.32)
+      rex (>= 1.0.2)
+    nokogiri (1.5.0)
+    rex (1.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cinch
+  lab
+  msfrpc-client
+  nexpose
