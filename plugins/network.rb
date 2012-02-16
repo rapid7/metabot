@@ -1,14 +1,24 @@
 class Network
   include Cinch::Plugin
 
-  match /[a|A][v|V] [e|E]vasion/, method: :evasion
-  
-  
-  def initialize(*args)
-    super(*args)
-  end
-  
-  def evasion(m)  
-    m.reply "AV Evasion - see: http://schierlm.users.sourceforge.net/avevasion.html && http://www.scriptjunkie.us/2011/04/why-encoding-does-not-matter-and-how-metasploit-generates-exes/"
-  end
+	match /nmap (.+)/, method: :nmap
+	match /ping (.+)/, method: :ping
+	match /ping_long (.+) (.+)/, method: :ping_long
+	
+	
+	def initialize(*args)
+		super(*args)
+	end
+	
+	def nmap(m, range)	
+		output_or_link m, `nmap #{filter_command(range)}` if is_admin? m.user
+	end
+	
+	def ping(m, system)	
+		output_or_link m, `ping -c 2 #{filter_command(system)}` if is_admin? m.user
+	end		
+
+	def ping_long(m, system, count=100)
+		output_or_link m, `ping -c #{filter_command(count)} #{filter_command(system)}` if is_admin? m.user
+	end	
 end
