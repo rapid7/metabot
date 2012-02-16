@@ -1,8 +1,12 @@
 
-A bot you can use to control common security apps (metasploit, nexpose, etc)
+Metabot is an easy-to-use framework for IRC bots that give you control over common security apps (metasploit, nexpose, etc). 
+
+To use, simply copy the bot_example.rb into bots/bot.rb. Configure your plugins in the bots/bot.rb file (and any necessary configuration in the plugin) & launch the bot. 
+
+Feedback? @jcran
 
 Dependencies: 
-* cinch
-* msfrpc-client
-* nexpose
-* metasploit's lib/lab
+* cinch (bot framework)
+* msfrpc-client (metasploit framework / pro)
+* nexpose (nexpose control) 
+* lab (vm control)

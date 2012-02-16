@@ -11,13 +11,13 @@ bot = Cinch::Bot.new do
 	configure do |c|
 		c.server = "localhost"
 		c.port = 6667
-		c.channels = ["#metasploit"]
+		c.channels = ["#metabot"]
 		c.realname = "metabot"
 		c.user = "metabot"
 		c.nick = "metabot"
 		c.verbose = true
 		#c.ssl = OpenStruct.new({:use => true, :verify => false})
-		c.plugins.plugins = [ VmControl, System, Network, Framework, Nexpose, MsfPro, Test, Build, Jenkins ]
+		c.plugins.plugins = [ ] # Place plugins here.
 		@version = "0.3.0"
 	end
 
