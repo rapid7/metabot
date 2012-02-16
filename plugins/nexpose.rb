@@ -1,7 +1,7 @@
 require 'helpers'
 require 'nexpose'
 
-class Framework
+class NexposePlugin
   include Cinch::Plugin
 
   match /nx_ver/, method: :ver
