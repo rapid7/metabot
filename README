@@ -7,6 +7,7 @@ Feedback? @jcran
 
 Dependencies: 
 * cinch (bot framework)
-* msfrpc-client (metasploit framework / pro)
-* nexpose (nexpose control) 
-* lab (vm control)
+* msfrpc-client (msf / msf_pro)
+* nexpose (nexpose_control) 
+* lab (vm_control)
+* nokogiri (google / urban_dictionary)
